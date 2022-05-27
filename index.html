@@ -31,15 +31,15 @@
             <form id="stormtrooper-form">
                 <div>
                     <label for="name">NAME</label>
-                    <input type="text" name="name" id="name">
+                    <input class="form-input" type="text" name="name" id="name" required>
                 </div>
                 <div>
                     <label for="mail">EMAIL</label>
-                    <input type="email" name="mail" id="mail">
+                    <input class="form-input" type="email" name="mail" id="mail" required>
                 </div>
                 <div>
                     <label for="species">SPECIES</label>
-                    <input list="species-list" name="species" id="species">
+                    <input class="form-input" list="species-list" name="species" id="species" required>
                     <datalist id="species-list">
                         <option value="Ewok">
                         <option value="Human">
@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <label for="planet">HOMEPLANET</label>
-                    <input list="planet-list" type="text" name="planet" id="planet">
+                    <input class="form-input" list="planet-list" type="text" name="planet" id="planet" required>
                     <datalist id="planet-list">
                         <option value="Endor">
                         <option value="Naboo">
@@ -63,11 +63,11 @@
                 </div>
                 <div>
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input class="form-input" type="password" name="password" id="password" required>
                 </div>
                 <div>
                     <label for="password-repeat">CONFIRM PASSWORD</label>
-                    <input type="password" name="password-repeat" id="password-repeat">
+                    <input class="form-input" type="password" name="password-repeat" id="password-repeat" required>
                 </div>
             </form>
         </div>
