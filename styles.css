@@ -12,7 +12,10 @@ body {
 }
 
 section {
-    background-color: lightblue;
+    position: relative;
+    background-image: url(images/darth-vader.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -20,9 +23,51 @@ section {
 }
 
 main {
-    background-color: aquamarine;
+    background-color: #38393D;
     grid-column-start: 3;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+    padding: 2em;
+    background-color: rgba(56, 57, 61, 0.8);
+}
+
+.logo {
+    width: 70px;
+}
+
+.heading {
+    font-family: 'Coustard', serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #E9E8ED;
+}
+
+.image-link {
+    text-align: center;
+    margin-right: auto;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.image-link,
+a:link,
+a:visited {
+    color: #38393D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E9E8ED;
+    text-decoration: none;
 }
