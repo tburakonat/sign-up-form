@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/galactic-empire.webp" type="image/x-icon">
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -18,6 +19,63 @@
         </header>
         <p class="image-link">Photo by <a href="https://unsplash.com/@arturtumasjan">Artur Tumasjan</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </section>
-    <main></main>
+    <main>
+        <div class="information">
+            <p>The clone wars are finished! But another war has started...</p>
+            <p>A rebellion is on the rise. We will destroy them and we need your help!</p>
+            <p>Sign up to crush the rebellion as a Stormtrooper with Lord Vader.</p>
+            <p>HOPE CANNOT SAVE THEM</p>
+        </div>
+        <div class="signup">
+            <h3>Sign up for peace, freedom, justice and security.</h3>
+            <form id="stormtrooper-form">
+                <div>
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="species">SPECIES</label>
+                    <input list="species-list" name="species" id="species">
+                    <datalist id="species-list">
+                        <option value="Ewok">
+                        <option value="Human">
+                        <option value="Jawa">
+                        <option value="Mon Calamari">
+                        <option value="Twi'lek">
+                        <option value="Zabraks">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="planet">HOMEPLANET</label>
+                    <input list="planet-list" type="text" name="planet" id="planet">
+                    <datalist id="planet-list">
+                        <option value="Endor">
+                        <option value="Naboo">
+                        <option value="Coruscant">
+                        <option value="Tatooine">
+                        <option value="Dagobah">
+                        <option value="Scarif">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="password-repeat">CONFIRM PASSWORD</label>
+                    <input type="password" name="password-repeat" id="password-repeat">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button class="sign-up-button" type="submit" form="stormtrooper-form">
+                Sign Up
+            </button>
+        </div>
+    </main>
 </body>
 </html>

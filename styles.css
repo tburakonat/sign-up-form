@@ -1,3 +1,8 @@
+:root {
+    --light-color: #E9E8ED;
+    --dark-color: #38393D
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +10,14 @@
 }
 
 body {
+    font-family: 'Coustard', serif;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+
+/* Left Hero Styles */
 
 section {
     position: relative;
@@ -18,14 +26,6 @@ section {
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: -1;
-}
-
-main {
-    background-color: #38393D;
-    grid-column-start: 3;
-    grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
 }
@@ -45,11 +45,10 @@ header {
 }
 
 .heading {
-    font-family: 'Coustard', serif;
     font-weight: 900;
     font-size: 30px;
     letter-spacing: 1px;
-    color: #E9E8ED;
+    color: var(--light-color);
 }
 
 .image-link {
@@ -63,11 +62,89 @@ header {
 .image-link,
 a:link,
 a:visited {
-    color: #38393D;
+    color: var(--dark-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #E9E8ED;
+    color: var(--light-color);
     text-decoration: none;
+}
+
+/* Right Input Styles */
+main {
+    background-color: var(--light-color);
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 30px 0;
+}
+
+.information p {
+    margin-top: 0.5em;
+    letter-spacing: 1.5px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    padding: 3em;
+    box-shadow: 0 0 3px black;
+    background-color: white;
+}
+
+form {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    letter-spacing: 2px;
+}
+
+form input {
+    height: 30px;
+    width: 230px;
+}
+
+.footer {
+    padding: 0 30px 30px 50px;
+}
+
+.sign-up-button {
+    height: 40px;
+    width: 200px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 5px 10px;
+}
+
+.sign-up-button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color)
 }
