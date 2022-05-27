@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+main {
+    background-color: aquamarine;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
