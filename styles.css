@@ -10,7 +10,6 @@
 }
 
 body {
-    font-family: 'Coustard', serif;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -20,6 +19,7 @@ body {
 /* Left Hero Styles */
 
 section {
+    font-family: 'Coustard', serif;
     position: relative;
     background-image: url(images/darth-vader.jpeg);
     background-size: cover;
@@ -81,6 +81,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .information {
@@ -96,13 +97,17 @@ main {
     letter-spacing: 1.5px;
 }
 
+.information p:last-child {
+    font-weight: 700;
+}
+
 .signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: max-content;
     padding: 3em;
-    box-shadow: 0 0 3px black;
+    box-shadow: 0 3px 20px silver;
     background-color: white;
 }
 
@@ -118,10 +123,23 @@ form > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 form label {
+    color: silver;
+    font-size: 12px;
     letter-spacing: 2px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 500ms ease-out;
+}
+
+.form-input:focus-within + label,
+.form-input:valid + label {
+    top: -20px;
+    color: var(--dark-color);
 }
 
 .form-input {
@@ -138,6 +156,8 @@ form label {
 }
 
 .sign-up-button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     height: 40px;
     width: 200px;
     border-style: none;
