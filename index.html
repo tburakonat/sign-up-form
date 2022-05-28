@@ -63,11 +63,11 @@
                     </datalist>
                 </div>
                 <div>
-                    <input class="form-input" type="password" name="password" id="password" required>
+                    <input class="form-input" type="password" name="password" id="password" minlength="8" required>
                     <label for="password">PASSWORD</label>
                 </div>
                 <div>
-                    <input class="form-input" type="password" name="password-repeat" id="password-repeat" required>
+                    <input class="form-input" type="password" name="password-repeat" id="password-repeat" minlength="8" onkeyup="check()" required>
                     <label for="password-repeat">CONFIRM PASSWORD</label>
                 </div>
             </form>
